@@ -1,0 +1,168 @@
+{
+  "best_model": "RandomForest",
+  "best_r2": 0.5131493359631614,
+  "best_mae": 8431.06572281036,
+  "best_mse": 254821342.73107415,
+  "all_results": [
+    {
+      "Model": "RandomForest",
+      "R2_mean": 0.5131493359631614,
+      "R2_std": 0.031065352458940196,
+      "MAE_mean": 8431.06572281036,
+      "MAE_std": 258.0868138235664,
+      "MSE_mean": 254821342.73107415,
+      "MSE_std": 32057448.963387046
+    },
+    {
+      "Model": "XGBoost",
+      "R2_mean": 0.5050022435003356,
+      "R2_std": 0.02700186517955362,
+      "MAE_mean": 8642.9019695019,
+      "MAE_std": 184.1235374935252,
+      "MSE_mean": 259090830.3114995,
+      "MSE_std": 31234253.727068406
+    },
+    {
+      "Model": "GradientBoosting",
+      "R2_mean": 0.4816285820135125,
+      "R2_std": 0.025836887010471994,
+      "MAE_mean": 9156.189276224166,
+      "MAE_std": 218.6612459210956,
+      "MSE_mean": 271411063.6733573,
+      "MSE_std": 32709933.89103037
+    },
+    {
+      "Model": "Lasso",
+      "R2_mean": 0.09131143617765491,
+      "R2_std": 0.07681236959862271,
+      "MAE_mean": 14323.394436555714,
+      "MAE_std": 994.9382210270662,
+      "MSE_mean": 475934855.39756525,
+      "MSE_std": 68310019.20028365
+    },
+    {
+      "Model": "Ridge",
+      "R2_mean": 0.09026906600542181,
+      "R2_std": 0.07729716670631587,
+      "MAE_mean": 14328.33414794772,
+      "MAE_std": 1006.5511762681173,
+      "MSE_mean": 476493485.64311993,
+      "MSE_std": 68605218.59214991
+    },
+    {
+      "Model": "LinearRegression",
+      "R2_mean": 0.09022511613618678,
+      "R2_std": 0.07736368159260959,
+      "MAE_mean": 14328.776143526955,
+      "MAE_std": 1006.7163982622134,
+      "MSE_mean": 476518323.86630344,
+      "MSE_std": 68644812.47576247
+    }
+  ],
+  "data_info": {
+    "total_samples": 421570,
+    "features_count": 20,
+    "train_period": "2010-02-05 to 2012-10-26",
+    "target_mean": 15981.25812346704,
+    "target_std": 22711.183519163224
+  },
+  "key_insights": [
+    "RandomForest показал лучшие результаты (R2=0.513)",
+    "Tree-based модели в 5.7 раз лучше линейных",
+    "MAE снизился на 41% по сравнению с линейными моделями",
+    "Высокая вариативность данных требует feature engineering",
+    "Выбросы (8.43% данных) значительно влияют на качество"
+  ],
+  "feature_importance": [
+    {
+      "feature": "Dept_Freq",
+      "importance": 0.6102212869870635
+    },
+    {
+      "feature": "Store_Freq",
+      "importance": 0.26272174807522086
+    },
+    {
+      "feature": "Size",
+      "importance": 0.04006258930162976
+    },
+    {
+      "feature": "WeekOfYear",
+      "importance": 0.033773376478898484
+    },
+    {
+      "feature": "CPI",
+      "importance": 0.010329380304377429
+    },
+    {
+      "feature": "Month",
+      "importance": 0.009389730321387535
+    },
+    {
+      "feature": "Type_2",
+      "importance": 0.00750488036796394
+    },
+    {
+      "feature": "MarkDown3",
+      "importance": 0.006974475270969581
+    },
+    {
+      "feature": "Type_3",
+      "importance": 0.005493304017138212
+    },
+    {
+      "feature": "Unemployment",
+      "importance": 0.005126375728784818
+    },
+    {
+      "feature": "Temperature",
+      "importance": 0.0026135320309720812
+    },
+    {
+      "feature": "Fuel_Price",
+      "importance": 0.0018110880672523417
+    },
+    {
+      "feature": "IsHoliday_1",
+      "importance": 0.0012096700401754217
+    },
+    {
+      "feature": "MarkDown5",
+      "importance": 0.0008597907001738089
+    },
+    {
+      "feature": "MarkDown4",
+      "importance": 0.0008212534485962043
+    },
+    {
+      "feature": "MarkDown1",
+      "importance": 0.0005878593739123512
+    },
+    {
+      "feature": "MarkDown2",
+      "importance": 0.0004688321764090876
+    },
+    {
+      "feature": "Year",
+      "importance": 3.0827309074643417e-05
+    },
+    {
+      "feature": "IsWeekend",
+      "importance": 0.0
+    },
+    {
+      "feature": "DayOfWeek",
+      "importance": 0.0
+    }
+  ],
+  "error_stats": {
+    "MAE": 8182.658152641465,
+    "MSE": 230852834.81335413,
+    "RMSE": 15193.842003040381,
+    "R2": 0.5242513541777907,
+    "Mean Error": -183.74961273258916,
+    "Std Error": 15192.838974538407,
+    "Max Error": 150193.51283192716,
+    "Median Error": 3220.6427289984094
+  }
+}

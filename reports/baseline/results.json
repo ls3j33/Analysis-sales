@@ -1,0 +1,85 @@
+{
+  "best_model": "RandomForest",
+  "metrics": {
+    "R2_mean": 0.5096840737916006,
+    "MAE_mean": 8455.020669543703,
+    "MSE_mean": 256448337.74919614
+  },
+  "all_results": [
+    {
+      "Model": "RandomForest",
+      "R2_mean": 0.5096840737916006,
+      "R2_std": 0.032192158102601974,
+      "MAE_mean": 8455.020669543703,
+      "MAE_std": 278.15376882041807,
+      "MSE_mean": 256448337.74919614,
+      "MSE_std": 31472251.639119003
+    },
+    {
+      "Model": "XGBoost",
+      "R2_mean": 0.5036343010013342,
+      "R2_std": 0.026587687435164552,
+      "MAE_mean": 8668.018413816942,
+      "MAE_std": 165.42052129467203,
+      "MSE_mean": 259662734.4197542,
+      "MSE_std": 30389732.63574369
+    },
+    {
+      "Model": "GradientBoosting",
+      "R2_mean": 0.482376049490678,
+      "R2_std": 0.026305228798944084,
+      "MAE_mean": 9139.083389384283,
+      "MAE_std": 220.43882932421798,
+      "MSE_mean": 270923264.6540895,
+      "MSE_std": 32436768.356030703
+    },
+    {
+      "Model": "Lasso",
+      "R2_mean": 0.09278682028615466,
+      "R2_std": 0.07510446027492396,
+      "MAE_mean": 14312.423232954554,
+      "MAE_std": 976.765241794478,
+      "MSE_mean": 474959378.0591999,
+      "MSE_std": 66764932.76965088
+    },
+    {
+      "Model": "Ridge",
+      "R2_mean": 0.09178258730059193,
+      "R2_std": 0.07555721634380243,
+      "MAE_mean": 14317.108012155852,
+      "MAE_std": 988.0556311919049,
+      "MSE_mean": 475496227.64781874,
+      "MSE_std": 67034636.68711984
+    },
+    {
+      "Model": "LinearRegression",
+      "R2_mean": 0.09174283885335717,
+      "R2_std": 0.07561567596412912,
+      "MAE_mean": 14317.506354302875,
+      "MAE_std": 988.2302972045142,
+      "MSE_mean": 475518495.119699,
+      "MSE_std": 67068424.96851964
+    }
+  ],
+  "feature_names": [
+    "Temperature",
+    "Fuel_Price",
+    "MarkDown1",
+    "MarkDown2",
+    "MarkDown3",
+    "MarkDown4",
+    "MarkDown5",
+    "CPI",
+    "Unemployment",
+    "Size",
+    "Year",
+    "Month",
+    "WeekOfYear",
+    "Quarter",
+    "Store_Freq",
+    "Dept_Freq",
+    "Type_2",
+    "Type_3",
+    "IsHoliday_1"
+  ]
+}
